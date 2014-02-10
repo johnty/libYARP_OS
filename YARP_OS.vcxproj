@@ -1,0 +1,553 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{538E4511-A670-4A41-B27A-1DD139E5DC60}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>YARP_OS</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\yarp-2.3.22\lib\Debug\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">YARP_OS.dir\Debug\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">YARP_OSd</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\yarp-2.3.22\lib\Release\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">YARP_OS.dir\Release\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">YARP_OS</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\yarp-2.3.22\lib\MinSizeRel\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">YARP_OS.dir\MinSizeRel\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">YARP_OS</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\yarp-2.3.22\lib\RelWithDebInfo\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">YARP_OS.dir\RelWithDebInfo\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">YARP_OS</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:/yarp-2.3.22/generated_include;D:/yarp-2.3.22/src/libYARP_OS/include;D:/ACE_wrappers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;YARP_PRESENT;_REENTRANT;WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;YARP_PRESENT;_REENTRANT;WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:/yarp-2.3.22/generated_include;D:/yarp-2.3.22/src/libYARP_OS/include;D:/ACE_wrappers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:/yarp-2.3.22/generated_include;D:/yarp-2.3.22/src/libYARP_OS/include;D:/ACE_wrappers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:/yarp-2.3.22/generated_include;D:/yarp-2.3.22/src/libYARP_OS/include;D:/ACE_wrappers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat></DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;YARP_PRESENT;_REENTRANT;WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;YARP_PRESENT;_REENTRANT;WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:/yarp-2.3.22/generated_include;D:/yarp-2.3.22/src/libYARP_OS/include;D:/ACE_wrappers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:/yarp-2.3.22/generated_include;D:/yarp-2.3.22/src/libYARP_OS/include;D:/ACE_wrappers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:/yarp-2.3.22/generated_include;D:/yarp-2.3.22/src/libYARP_OS/include;D:/ACE_wrappers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat></DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;YARP_PRESENT;_REENTRANT;WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;YARP_PRESENT;_REENTRANT;WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:/yarp-2.3.22/generated_include;D:/yarp-2.3.22/src/libYARP_OS/include;D:/ACE_wrappers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:/yarp-2.3.22/generated_include;D:/yarp-2.3.22/src/libYARP_OS/include;D:/ACE_wrappers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:/yarp-2.3.22/generated_include;D:/yarp-2.3.22/src/libYARP_OS/include;D:/ACE_wrappers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;YARP_PRESENT;_REENTRANT;WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;YARP_PRESENT;_REENTRANT;WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:/yarp-2.3.22/generated_include;D:/yarp-2.3.22/src/libYARP_OS/include;D:/ACE_wrappers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:/yarp-2.3.22/generated_include;D:/yarp-2.3.22/src/libYARP_OS/include;D:/ACE_wrappers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/yarp-2.3.22/src/libYARP_OS/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -HD:/yarp-2.3.22 -BD:/yarp-2.3.22 --check-stamp-file D:\yarp-2.3.22\src\libYARP_OS\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/yarp-2.3.22/src/libYARP_OS/CMakeLists.txt;D:\yarp-2.3.22\src\libYARP_OS\CMakeLists.txt;D:\yarp-2.3.22\src\libYARP_OS\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\yarp-2.3.22\src\libYARP_OS\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/yarp-2.3.22/src/libYARP_OS/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -HD:/yarp-2.3.22 -BD:/yarp-2.3.22 --check-stamp-file D:\yarp-2.3.22\src\libYARP_OS\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/yarp-2.3.22/src/libYARP_OS/CMakeLists.txt;D:\yarp-2.3.22\src\libYARP_OS\CMakeLists.txt;D:\yarp-2.3.22\src\libYARP_OS\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\yarp-2.3.22\src\libYARP_OS\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/yarp-2.3.22/src/libYARP_OS/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -HD:/yarp-2.3.22 -BD:/yarp-2.3.22 --check-stamp-file D:\yarp-2.3.22\src\libYARP_OS\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/yarp-2.3.22/src/libYARP_OS/CMakeLists.txt;D:\yarp-2.3.22\src\libYARP_OS\CMakeLists.txt;D:\yarp-2.3.22\src\libYARP_OS\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\yarp-2.3.22\src\libYARP_OS\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/yarp-2.3.22/src/libYARP_OS/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -HD:/yarp-2.3.22 -BD:/yarp-2.3.22 --check-stamp-file D:\yarp-2.3.22\src\libYARP_OS\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/yarp-2.3.22/src/libYARP_OS/CMakeLists.txt;D:\yarp-2.3.22\src\libYARP_OS\CMakeLists.txt;D:\yarp-2.3.22\src\libYARP_OS\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\yarp-2.3.22\src\libYARP_OS\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\yarp\os\all.h" />
+    <ClInclude Include="include\yarp\os\api.h" />
+    <ClInclude Include="include\yarp\os\begin_pack_for_net.h" />
+    <ClInclude Include="include\yarp\os\BinPortable.h" />
+    <ClInclude Include="include\yarp\os\Bottle.h" />
+    <ClInclude Include="include\yarp\os\BufferedPort.h" />
+    <ClInclude Include="include\yarp\os\Bytes.h" />
+    <ClInclude Include="include\yarp\os\Connection.h" />
+    <ClInclude Include="include\yarp\os\ConnectionReader.h" />
+    <ClInclude Include="include\yarp\os\ConnectionWriter.h" />
+    <ClInclude Include="include\yarp\os\ConstString.h" />
+    <ClInclude Include="include\yarp\os\Contact.h" />
+    <ClInclude Include="include\yarp\os\Contactable.h" />
+    <ClInclude Include="include\yarp\os\ContactStyle.h" />
+    <ClInclude Include="include\yarp\os\DummyConnector.h" />
+    <ClInclude Include="include\yarp\os\end_pack_for_net.h" />
+    <ClInclude Include="include\yarp\os\Event.h" />
+    <ClInclude Include="include\yarp\os\IConfig.h" />
+    <ClInclude Include="include\yarp\os\idl\WirePortable.h" />
+    <ClInclude Include="include\yarp\os\idl\WireReader.h" />
+    <ClInclude Include="include\yarp\os\idl\WireState.h" />
+    <ClInclude Include="include\yarp\os\idl\WireTypes.h" />
+    <ClInclude Include="include\yarp\os\idl\WireVocab.h" />
+    <ClInclude Include="include\yarp\os\idl\WireWriter.h" />
+    <ClInclude Include="include\yarp\os\impl\AbstractCarrier.h" />
+    <ClInclude Include="include\yarp\os\impl\ACESemaphoreImpl.h" />
+    <ClInclude Include="include\yarp\os\impl\Address.h" />
+    <ClInclude Include="include\yarp\os\impl\AuthHMAC.h" />
+    <ClInclude Include="include\yarp\os\impl\BottleImpl.h" />
+    <ClInclude Include="include\yarp\os\impl\BufferedConnectionWriter.h" />
+    <ClInclude Include="include\yarp\os\impl\Carrier.h" />
+    <ClInclude Include="include\yarp\os\impl\Carriers.h" />
+    <ClInclude Include="include\yarp\os\impl\Companion.h" />
+    <ClInclude Include="include\yarp\os\impl\CXX11SemaphoreImpl.h" />
+    <ClInclude Include="include\yarp\os\impl\DgramTwoWayStream.h" />
+    <ClInclude Include="include\yarp\os\impl\Dispatcher.h" />
+    <ClInclude Include="include\yarp\os\impl\Election.h" />
+    <ClInclude Include="include\yarp\os\impl\Face.h" />
+    <ClInclude Include="include\yarp\os\impl\FakeFace.h" />
+    <ClInclude Include="include\yarp\os\impl\FakeTwoWayStream.h" />
+    <ClInclude Include="include\yarp\os\impl\FallbackNameClient.h" />
+    <ClInclude Include="include\yarp\os\impl\FallbackNameServer.h" />
+    <ClInclude Include="include\yarp\os\impl\hmac\hmac_sha2.h" />
+    <ClInclude Include="include\yarp\os\impl\hmac\sha2.h" />
+    <ClInclude Include="include\yarp\os\impl\HttpCarrier.h" />
+    <ClInclude Include="include\yarp\os\impl\InputProtocol.h" />
+    <ClInclude Include="include\yarp\os\impl\IOException.h" />
+    <ClInclude Include="include\yarp\os\impl\LocalCarrier.h" />
+    <ClInclude Include="include\yarp\os\impl\Logger.h" />
+    <ClInclude Include="include\yarp\os\impl\MachSemaphoreImpl.h" />
+    <ClInclude Include="include\yarp\os\impl\McastCarrier.h" />
+    <ClInclude Include="include\yarp\os\impl\ModifyingCarrier.h" />
+    <ClInclude Include="include\yarp\os\impl\Name.h" />
+    <ClInclude Include="include\yarp\os\impl\NameClient.h" />
+    <ClInclude Include="include\yarp\os\impl\NameConfig.h" />
+    <ClInclude Include="include\yarp\os\impl\NameserCarrier.h" />
+    <ClInclude Include="include\yarp\os\impl\NameServer.h" />
+    <ClInclude Include="include\yarp\os\impl\NetType.h" />
+    <ClInclude Include="include\yarp\os\impl\OutputProtocol.h" />
+    <ClInclude Include="include\yarp\os\impl\PlatformList.h" />
+    <ClInclude Include="include\yarp\os\impl\PlatformMap.h" />
+    <ClInclude Include="include\yarp\os\impl\PlatformSet.h" />
+    <ClInclude Include="include\yarp\os\impl\PlatformSignal.h" />
+    <ClInclude Include="include\yarp\os\impl\PlatformSize.h" />
+    <ClInclude Include="include\yarp\os\impl\PlatformStdio.h" />
+    <ClInclude Include="include\yarp\os\impl\PlatformStdlib.h" />
+    <ClInclude Include="include\yarp\os\impl\PlatformThread.h" />
+    <ClInclude Include="include\yarp\os\impl\PlatformTime.h" />
+    <ClInclude Include="include\yarp\os\impl\PlatformVector.h" />
+    <ClInclude Include="include\yarp\os\impl\PortCommand.h" />
+    <ClInclude Include="include\yarp\os\impl\PortCore.h" />
+    <ClInclude Include="include\yarp\os\impl\PortCoreInputUnit.h" />
+    <ClInclude Include="include\yarp\os\impl\PortCoreOutputUnit.h" />
+    <ClInclude Include="include\yarp\os\impl\PortCorePacket.h" />
+    <ClInclude Include="include\yarp\os\impl\PortCoreUnit.h" />
+    <ClInclude Include="include\yarp\os\impl\PortManager.h" />
+    <ClInclude Include="include\yarp\os\impl\POSIXSemaphoreImpl.h" />
+    <ClInclude Include="include\yarp\os\impl\Protocol.h" />
+    <ClInclude Include="include\yarp\os\impl\Route.h" />
+    <ClInclude Include="include\yarp\os\impl\RunCheckpoints.h" />
+    <ClInclude Include="include\yarp\os\impl\Runnable.h" />
+    <ClInclude Include="include\yarp\os\impl\RunProcManager.h" />
+    <ClInclude Include="include\yarp\os\impl\RunReadWrite.h" />
+    <ClInclude Include="include\yarp\os\impl\SemaphoreImpl.h" />
+    <ClInclude Include="include\yarp\os\impl\ShiftStream.h" />
+    <ClInclude Include="include\yarp\os\impl\ShmemCarrier.h" />
+    <ClInclude Include="include\yarp\os\impl\ShmemHybridStream.h" />
+    <ClInclude Include="include\yarp\os\impl\ShmemInputStream.h" />
+    <ClInclude Include="include\yarp\os\impl\ShmemOutputStream.h" />
+    <ClInclude Include="include\yarp\os\impl\ShmemTwoWayStream.h" />
+    <ClInclude Include="include\yarp\os\impl\ShmemTypes.h" />
+    <ClInclude Include="include\yarp\os\impl\SizedWriter.h" />
+    <ClInclude Include="include\yarp\os\impl\SocketTwoWayStream.h" />
+    <ClInclude Include="include\yarp\os\impl\SplitString.h" />
+    <ClInclude Include="include\yarp\os\impl\StreamConnectionReader.h" />
+    <ClInclude Include="include\yarp\os\impl\String.h" />
+    <ClInclude Include="include\yarp\os\impl\StringInputStream.h" />
+    <ClInclude Include="include\yarp\os\impl\StringOutputStream.h" />
+    <ClInclude Include="include\yarp\os\impl\SystemInfo.h" />
+    <ClInclude Include="include\yarp\os\impl\SystemInfoSerializer.h" />
+    <ClInclude Include="include\yarp\os\impl\TcpAcceptor.h" />
+    <ClInclude Include="include\yarp\os\impl\TcpCarrier.h" />
+    <ClInclude Include="include\yarp\os\impl\TcpConnector.h" />
+    <ClInclude Include="include\yarp\os\impl\TcpFace.h" />
+    <ClInclude Include="include\yarp\os\impl\TcpStream.h" />
+    <ClInclude Include="include\yarp\os\impl\TextCarrier.h" />
+    <ClInclude Include="include\yarp\os\impl\ThreadImpl.h" />
+    <ClInclude Include="include\yarp\os\impl\TwoWayStream.h" />
+    <ClInclude Include="include\yarp\os\impl\UdpCarrier.h" />
+    <ClInclude Include="include\yarp\os\impl\UnitTest.h" />
+    <ClInclude Include="include\yarp\os\impl\ydr.h" />
+    <ClInclude Include="include\yarp\os\InputStream.h" />
+    <ClInclude Include="include\yarp\os\LocalReader.h" />
+    <ClInclude Include="include\yarp\os\Log.h" />
+    <ClInclude Include="include\yarp\os\ManagedBytes.h" />
+    <ClInclude Include="include\yarp\os\Module.h" />
+    <ClInclude Include="include\yarp\os\MultiNameSpace.h" />
+    <ClInclude Include="include\yarp\os\NameSpace.h" />
+    <ClInclude Include="include\yarp\os\NameStore.h" />
+    <ClInclude Include="include\yarp\os\NetFloat32.h" />
+    <ClInclude Include="include\yarp\os\NetFloat64.h" />
+    <ClInclude Include="include\yarp\os\NetInt16.h" />
+    <ClInclude Include="include\yarp\os\NetInt32.h" />
+    <ClInclude Include="include\yarp\os\NetInt64.h" />
+    <ClInclude Include="include\yarp\os\NetUint16.h" />
+    <ClInclude Include="include\yarp\os\NetUint32.h" />
+    <ClInclude Include="include\yarp\os\NetUint64.h" />
+    <ClInclude Include="include\yarp\os\Network.h" />
+    <ClInclude Include="include\yarp\os\NullConnectionReader.h" />
+    <ClInclude Include="include\yarp\os\NullConnectionWriter.h" />
+    <ClInclude Include="include\yarp\os\Os.h" />
+    <ClInclude Include="include\yarp\os\OutputStream.h" />
+    <ClInclude Include="include\yarp\os\Ping.h" />
+    <ClInclude Include="include\yarp\os\Port.h" />
+    <ClInclude Include="include\yarp\os\Portable.h" />
+    <ClInclude Include="include\yarp\os\PortablePair.h" />
+    <ClInclude Include="include\yarp\os\PortInfo.h" />
+    <ClInclude Include="include\yarp\os\PortReader.h" />
+    <ClInclude Include="include\yarp\os\PortReaderBuffer.h" />
+    <ClInclude Include="include\yarp\os\PortReaderCreator.h" />
+    <ClInclude Include="include\yarp\os\PortReport.h" />
+    <ClInclude Include="include\yarp\os\PortWriter.h" />
+    <ClInclude Include="include\yarp\os\PortWriterBuffer.h" />
+    <ClInclude Include="include\yarp\os\Property.h" />
+    <ClInclude Include="include\yarp\os\Random.h" />
+    <ClInclude Include="include\yarp\os\RateThread.h" />
+    <ClInclude Include="include\yarp\os\ResourceFinder.h" />
+    <ClInclude Include="include\yarp\os\RFModule.h" />
+    <ClInclude Include="include\yarp\os\RosNameSpace.h" />
+    <ClInclude Include="include\yarp\os\RpcClient.h" />
+    <ClInclude Include="include\yarp\os\RpcServer.h" />
+    <ClInclude Include="include\yarp\os\Run.h" />
+    <ClInclude Include="include\yarp\os\Runnable.h" />
+    <ClInclude Include="include\yarp\os\Searchable.h" />
+    <ClInclude Include="include\yarp\os\Semaphore.h" />
+    <ClInclude Include="include\yarp\os\SharedLibrary.h" />
+    <ClInclude Include="include\yarp\os\SharedLibraryClass.h" />
+    <ClInclude Include="include\yarp\os\SharedLibraryClassApi.h" />
+    <ClInclude Include="include\yarp\os\SharedLibraryClassFactory.h" />
+    <ClInclude Include="include\yarp\os\SharedLibraryFactory.h" />
+    <ClInclude Include="include\yarp\os\Stamp.h" />
+    <ClInclude Include="include\yarp\os\Terminator.h" />
+    <ClInclude Include="include\yarp\os\Thread.h" />
+    <ClInclude Include="include\yarp\os\Time.h" />
+    <ClInclude Include="include\yarp\os\Value.h" />
+    <ClInclude Include="include\yarp\os\Vocab.h" />
+    <ClInclude Include="include\yarp\os\Wire.h" />
+    <ClInclude Include="include\yarp\os\WireLink.h" />
+    <ClInclude Include="include\yarp\os\YarpNameSpace.h" />
+    <ClInclude Include="include\yarp\os\YarpPlugin.h" />
+    <ClInclude Include="include\yarp\os\YarpPluginSelector.h" />
+    <ClInclude Include="include\yarp\os\YarpPluginSettings.h" />
+    <ClCompile Include="src\AbstractCarrier.cpp"  />
+    <ClCompile Include="src\Address.cpp"  />
+    <ClCompile Include="src\AuthHMAC.cpp"  />
+    <ClCompile Include="src\Bottle.cpp"  />
+    <ClCompile Include="src\BottleImpl.cpp"  />
+    <ClCompile Include="src\BufferedConnectionWriter.cpp"  />
+    <ClCompile Include="src\Bytes.cpp"  />
+    <ClCompile Include="src\Carriers.cpp"  />
+    <ClCompile Include="src\Companion.cpp"  />
+    <ClCompile Include="src\ConnectionReader.cpp"  />
+    <ClCompile Include="src\ConnectionWriter.cpp"  />
+    <ClCompile Include="src\ConstString.cpp"  />
+    <ClCompile Include="src\Contact.cpp"  />
+    <ClCompile Include="src\Contactable.cpp"  />
+    <ClCompile Include="src\ContactStyle.cpp"  />
+    <ClCompile Include="src\DgramTwoWayStream.cpp"  />
+    <ClCompile Include="src\Dispatcher.cpp"  />
+    <ClCompile Include="src\DummyConnector.cpp"  />
+    <ClCompile Include="src\Election.cpp"  />
+    <ClCompile Include="src\Event.cpp"  />
+    <ClCompile Include="src\FakeFace.cpp"  />
+    <ClCompile Include="src\FallbackNameClient.cpp"  />
+    <ClCompile Include="src\FallbackNameServer.cpp"  />
+    <ClCompile Include="src\HttpCarrier.cpp"  />
+    <ClCompile Include="src\IConfig.cpp"  />
+    <ClCompile Include="src\LocalCarrier.cpp"  />
+    <ClCompile Include="src\Logger.cpp"  />
+    <ClCompile Include="src\ManagedBytes.cpp"  />
+    <ClCompile Include="src\McastCarrier.cpp"  />
+    <ClCompile Include="src\ModifyingCarrier.cpp"  />
+    <ClCompile Include="src\Module.cpp"  />
+    <ClCompile Include="src\MultiNameSpace.cpp"  />
+    <ClCompile Include="src\Name.cpp"  />
+    <ClCompile Include="src\NameClient.cpp"  />
+    <ClCompile Include="src\NameConfig.cpp"  />
+    <ClCompile Include="src\NameserCarrier.cpp"  />
+    <ClCompile Include="src\NameServer.cpp"  />
+    <ClCompile Include="src\NameSpace.cpp"  />
+    <ClCompile Include="src\NameStore.cpp"  />
+    <ClCompile Include="src\NetFloat32.cpp"  />
+    <ClCompile Include="src\NetFloat64.cpp"  />
+    <ClCompile Include="src\NetInt16.cpp"  />
+    <ClCompile Include="src\NetInt32.cpp"  />
+    <ClCompile Include="src\NetInt64.cpp"  />
+    <ClCompile Include="src\NetType.cpp"  />
+    <ClCompile Include="src\NetUint16.cpp"  />
+    <ClCompile Include="src\NetUint32.cpp"  />
+    <ClCompile Include="src\NetUint64.cpp"  />
+    <ClCompile Include="src\Network.cpp"  />
+    <ClCompile Include="src\NullConnectionReader.cpp"  />
+    <ClCompile Include="src\NullConnectionWriter.cpp"  />
+    <ClCompile Include="src\Os.cpp"  />
+    <ClCompile Include="src\Ping.cpp"  />
+    <ClCompile Include="src\Port.cpp"  />
+    <ClCompile Include="src\PortablePair.cpp"  />
+    <ClCompile Include="src\PortCommand.cpp"  />
+    <ClCompile Include="src\PortCore.cpp"  />
+    <ClCompile Include="src\PortCoreInputUnit.cpp"  />
+    <ClCompile Include="src\PortCoreOutputUnit.cpp"  />
+    <ClCompile Include="src\PortInfo.cpp"  />
+    <ClCompile Include="src\PortReader.cpp"  />
+    <ClCompile Include="src\PortReaderBuffer.cpp"  />
+    <ClCompile Include="src\PortReaderCreator.cpp"  />
+    <ClCompile Include="src\PortReport.cpp"  />
+    <ClCompile Include="src\PortWriter.cpp"  />
+    <ClCompile Include="src\PortWriterBuffer.cpp"  />
+    <ClCompile Include="src\Property.cpp"  />
+    <ClCompile Include="src\Protocol.cpp"  />
+    <ClCompile Include="src\Random.cpp"  />
+    <ClCompile Include="src\RateThread.cpp"  />
+    <ClCompile Include="src\ResourceFinder.cpp"  />
+    <ClCompile Include="src\RFModule.cpp"  />
+    <ClCompile Include="src\RosNameSpace.cpp"  />
+    <ClCompile Include="src\RpcClient.cpp"  />
+    <ClCompile Include="src\RpcServer.cpp"  />
+    <ClCompile Include="src\Run.cpp"  />
+    <ClCompile Include="src\RunCheckpoints.cpp"  />
+    <ClCompile Include="src\RunProcManager.cpp"  />
+    <ClCompile Include="src\RunReadWrite.cpp"  />
+    <ClCompile Include="src\Searchable.cpp"  />
+    <ClCompile Include="src\Semaphore.cpp"  />
+    <ClCompile Include="src\SharedLibrary.cpp"  />
+    <ClCompile Include="src\ShmemCarrier.cpp"  />
+    <ClCompile Include="src\ShmemHybridStream.cpp"  />
+    <ClCompile Include="src\ShmemInputStream.cpp"  />
+    <ClCompile Include="src\ShmemOutputStream.cpp"  />
+    <ClCompile Include="src\ShmemTwoWayStream.cpp"  />
+    <ClCompile Include="src\SocketTwoWayStream.cpp"  />
+    <ClCompile Include="src\Stamp.cpp"  />
+    <ClCompile Include="src\StreamConnectionReader.cpp"  />
+    <ClCompile Include="src\SystemInfo.cpp"  />
+    <ClCompile Include="src\TcpAcceptor.cpp"  />
+    <ClCompile Include="src\TcpCarrier.cpp"  />
+    <ClCompile Include="src\TcpConnector.cpp"  />
+    <ClCompile Include="src\TcpFace.cpp"  />
+    <ClCompile Include="src\TcpStream.cpp"  />
+    <ClCompile Include="src\Terminator.cpp"  />
+    <ClCompile Include="src\TextCarrier.cpp"  />
+    <ClCompile Include="src\Thread.cpp"  />
+    <ClCompile Include="src\ThreadImpl.cpp"  />
+    <ClCompile Include="src\Time.cpp"  />
+    <ClCompile Include="src\TwoWayStream.cpp"  />
+    <ClCompile Include="src\UdpCarrier.cpp"  />
+    <ClCompile Include="src\UnitTest.cpp"  />
+    <ClCompile Include="src\Value.cpp"  />
+    <ClCompile Include="src\Vocab.cpp"  />
+    <ClCompile Include="src\YarpNameSpace.cpp"  />
+    <ClCompile Include="src\YarpPlugin.cpp"  />
+    <ClCompile Include="src\ydr.cpp"  />
+    <ClCompile Include="src\hmac_sha2.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\sha2.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:/yarp-2.3.22/ZERO_CHECK.vcxproj">
+      <Project>A7F0AB0B-BA89-4E98-9295-BA35F31150E6</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
