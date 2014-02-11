@@ -858,10 +858,10 @@
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{D45C8588-4822-444E-9449-C4779466CAB8}</UniqueIdentifier>
+      <UniqueIdentifier>{5BF5D31C-CFC9-476F-A696-F7110ED7122B}</UniqueIdentifier>
     </Filter>
     <Filter Include="Header Files">
-      <UniqueIdentifier>{9936D56D-62B8-4C47-8533-BCEBF3EC9CD0}</UniqueIdentifier>
+      <UniqueIdentifier>{C3DC3F08-A0B7-4C85-B99C-5DEFA6533869}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
